@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/* css*/
+* {
+	margin: 0%;
+	border: 0%;
+	padding: 0%;
+}
+
+body {
+
+	/* margin: 60px; */
+	/* background-color: rgb(240, 240, 240); */
+	background-image: url(../imagenes1/naturaleza.jpg);
+}
+
+
+/* header */
+/* **************** */
+/* *******************+ */
+header img {
+	width: 10%;
+	margin: 3% 0% 0% 5%;
+	border-radius: 40px;
+	border: 2px solid white;
+}
+
+/* nav */
+/* ********************+ */
+nav {
+	width: 80%;
+	margin: -4% 0px 0px 20%;
+}
+
+nav ul {
+	list-style-type: none;
+	/*desaparecn los puntos*/
+	display: flex;
+	/*fila*/
+}
+
+nav>li {
+	float: left;
+}
+
+.nav li a {
+	background-color: transparent;
+	color: white;
+	text-decoration: none;
+	/*desaparecen la rayas*/
+	padding: 10px;
+	/*ordm*/
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 16pt;
+	letter-spacing: 2px;
+
+}
+
+.nav li ul {
+	display: none;
+	/*orden*/
+	position: absolute;
+	min-width: 140px
+}
+
+.nav li ul li {
+	position: relative;
+
+}
+
+.nav li ul li a {
+	background-color: rgb(102, 83, 46);
+	font-family: 'Courier New', Courier, monospace;
+	/* font-size: 20px; */
+}
+
+.nav li:hover>ul {
+	display: block;
+	/*los selectores*/
+}
+
+.nav li a:hover {
+	color: black;
+	background-color: gray;
+}
+
+/* logo whatsap */
+/* **************** */
+.whatsapp img {
+	background-color: wheat;
+	border-radius: 100px;
+	float: right;
+	width: 8%;
+	margin: -60px 80px 0px 0px;
+}
+
+/* main */
+/* ********** */
+main {
+	display: flex;
+}
+
+main aside {
+	width: 10%;
+	background-color: black;
+	margin-left: 20%;
+}
+
+main aside p {
+	color: wheat;
+	text-align: center;
+	font: 5em courier;
+}
+
+/* main h3*/
+/* ***************** */
+h2 {
+	text-align: center;
+	background-color: wheat;
+	/* font-family: 'Courier New', Courier, monospace; */
+	font: 5em courier;
+	border-bottom: 5px solid black;
+
+}
+
+/* main section */
+/* *************** */
+
+main section .uno {
+	display: flex;
+	width: 100%;
+	margin-left: 10%;
+	/* border: 2px solid blue; */
+
+}
+
+main section .not1 {
+	background-color: rgb(94, 91, 91);
+	border-bottom: 4px solid black;
+	padding: 20px;
+	width: 100%;
+
+}
+
+main section p {
+	font-size: 15pt;
+}
+
+main .not1 #a1 {
+	color: wheat;
+	font-size: 20pt;
+	font-weight: bolder;
+}
+
+main .not1 #a2 {
+	color: rgb(255, 255, 255);
+	font-size: 10pt;
+}
+
+main section a img {
+
+	width: 300px;
+	height: 300px;
+	padding: 10px;
+	margin-top: -10px;
+	margin-left: 20px;
+	border-radius: 30px;
+}
+
+/* ***********+ */
+/* ************* */

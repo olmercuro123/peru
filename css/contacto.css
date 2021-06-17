@@ -1,0 +1,211 @@
+* {
+	margin: 0%;
+	border: 0%;
+	padding: 0%;
+}
+
+body {
+	background-image: url(../imagenes1/portada.png);
+	background-repeat: no-repeat;
+	/*para que no repita*/
+	background-size: 100%;
+}
+
+
+/* header */
+/* **************** */
+/* *******************+ */
+header img {
+	width: 10%;
+	margin: 3% 0% 0% 5%;
+	border-radius: 40px;
+	border: 2px solid white;
+}
+
+/* nav */
+/* ********************+ */
+nav {
+	width: 80%;
+	margin: -4% 0px 0px 20%;
+}
+
+nav ul {
+	list-style-type: none;
+	/*desaparecn los puntos*/
+	display: flex;
+	/*fila*/
+}
+
+nav>li {
+	float: left;
+}
+
+.nav li a {
+	background-color: transparent;
+	color: white;
+	text-decoration: none;
+	/*desaparecen la rayas*/
+	padding: 10px;
+	/*ordm*/
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 16pt;
+	letter-spacing: 2px;
+
+}
+
+.nav li ul {
+	display: none;
+	/*orden*/
+	position: absolute;
+	min-width: 140px
+}
+
+.nav li ul li {
+	position: relative;
+
+}
+
+.nav li ul li a {
+	rgb(102, 83, 46);
+	background-color: rgb(102, 83, 46);
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.nav li:hover>ul {
+	display: block;
+	/*los selectores*/
+}
+
+.nav li a:hover {
+	color: black;
+	background-color: gray;
+}
+
+/* logo whatsap */
+/* **************** */
+.whatsapp img {
+	background-color: wheat;
+	border-radius: 100px;
+	float: right;
+	width: 8%;
+	margin: -60px 80px 0px 0px;
+}
+
+/* main img */
+.primero img {
+	width: 100%;
+}
+
+.patrimonio {
+	background-color: white;
+	text-align: center;
+
+}
+
+.patrimonio p {
+	color: rgb(102, 83, 46);
+	font-size: 20pt;
+	font-weight: bold;
+	font-family: 'Courier New', Courier, monospace;
+	margin: 20px 0px;
+}
+
+
+.patrimonio img {
+	width: 15%;
+	padding: 10px;
+
+}
+
+.patrimonio a img:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+/* ********FORMULARIO */
+/* **************** */
+
+/*---------------ESTILO FORMULARIO-----------*/
+.Formulario {
+	border: 1px solid #C5D5DC;
+	background-color: rgb(237, 228, 215);
+	width: 30%;
+	border-radius: 10px;
+	margin-left: 450px;
+	margin-right: 450px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h1 {
+	text-align: center;
+	color: #5B826A;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "Roboto", sans-serif;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.container {
+	margin: auto;
+	width: 90%;
+	padding: 15px;
+	border-radius: 2%;
+}
+
+.inpu-container {
+	margin-bottom: 15px;
+	box-decoration-break: 1px solid #aaa;
+}
+
+span {
+	font-size: 17px;
+	color: #4d4d4d;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+	font-size: 15px;
+	width: 95%;
+	padding: 10px;
+	border: 1px solid #C5D5DC;
+	background: #E8F0FE;
+	color: #2D4135;
+}
+
+.buttom {
+	border: none;
+	width: 80%;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	background: #61BD0D;
+	padding: 15px 20px;
+	margin-left: 35px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.buttom:hover {
+	background: rgb(16, 35, 36);
+}
+
+.p:hover {
+	color: red;
+}
+
+.link {
+	text-decoration: none;
+	color: #337AB7;
+	font-weight: 600;
+	margin-left: 30px;
+}
+
+.link:hover {
+	color: sienna;
+}

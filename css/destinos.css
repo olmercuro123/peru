@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+/* css*/
+* {
+	margin: 0%;
+	border: 0%;
+	padding: 0%;
+}
+
+body {
+
+	/* margin: 60px; */
+	/* background-color: rgb(240, 240, 240); */
+	background-image: url(../imagenes1/naturaleza.jpg);
+}
+
+
+/* header */
+/* **************** */
+/* *******************+ */
+header img {
+	width: 10%;
+	margin: 3% 0% 0% 5%;
+	border-radius: 40px;
+	border: 2px solid white;
+}
+
+/* nav */
+/* ********************+ */
+nav {
+	width: 80%;
+	margin: -4% 0px 0px 20%;
+}
+
+nav ul {
+	list-style-type: none;
+	/*desaparecn los puntos*/
+	display: flex;
+	/*fila*/
+}
+
+nav>li {
+	float: left;
+}
+
+.nav li a {
+	background-color: transparent;
+	color: white;
+	text-decoration: none;
+	/*desaparecen la rayas*/
+	padding: 10px;
+	/*ordm*/
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 16pt;
+	letter-spacing: 2px;
+
+}
+
+.nav li ul {
+	display: none;
+	/*orden*/
+	position: absolute;
+	min-width: 140px
+}
+
+.nav li ul li {
+	position: relative;
+
+}
+
+.nav li ul li a {
+	background-color: rgb(102, 83, 46);
+	font-family: 'Courier New', Courier, monospace;
+	/* font-size: 20px; */
+}
+
+.nav li:hover>ul {
+	display: block;
+	/*los selectores*/
+}
+
+.nav li a:hover {
+	color: black;
+	background-color: gray;
+}
+
+/* logo whatsap */
+/* **************** */
+.whatsapp img {
+	background-color: wheat;
+	border-radius: 100px;
+	float: right;
+	width: 8%;
+	margin: -60px 80px 0px 0px;
+}
+
+
+/* formulario */
+/* ***********+ */
+.form {
+	width: 70%;
+	margin: 15px;
+	border-radius: 10px;
+	border: 1px solid black;
+	padding: 20px;
+	/*sirve para ordenar */
+	background-color: transparent;
+	border: 2px solid black;
+	margin-left: 200px;
+}
+
+.formulario {
+	/* width: 80%; */
+	/* margin-left: 250px; */
+	margin-left: 200px;
+}
+
+.formulario h2 {
+	text-align: center;
+	margin: 3%;
+	border-bottom: 2px solid black;
+}
+
+
+.dato {
+	width: 80px;
+	display: inline-block;
+	margin: 0.4%;
+
+}
+
+input {
+	border-radius: 4px;
+	margin: 0.4%;
+	margin-left: 4%;
+	padding: 5px;
+}
+
+.boton {
+	margin-left: 70%;
+	padding: 6px;
+}
+
+/* 
+.form .formulario label .label{
+	width: 40%;
+} */
+textarea {
+	width: 400px;
+	height: 120px;
+	border-radius: 4px;
+}
+
+
+
+.boton {
+	background-color: wheat;
+	color: black;
+	border: 2px solid rgb(61, 60, 60);
+}
+
+.boton:hover {
+	background-color: white;
+}
+
+/* main */
+/* ***********/
+
+main h2 {
+	text-align: center;
+	font: 4em courier;
+	font-weight: bolder;
+	background-color: wheat;
+	/* margin-top: 20px; */
+}
+
+
+/* section  */
+/* ********************** */
+/* ******************* */
+
+section {
+	width: 30%;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	/* text-align: center; */
+	/* background-color: white; */
+	margin-left: 5%;
+}
+
+section figure {
+	width: 30%;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	/* border: 3px solid black; */
+}
+
+section figure img {
+	width: 900px;
+	/* width: 100%; */
+	/* height: 100%; */
+	/* margin: 10px auto; */
+	display: block;
+	border-radius: 10px;
+}
+
+/* section figure figcaption {
+	margin: 10px;
+	text-align: center;
+} */
+section figure img:hover {
+	transform: scale(1.2, 1.2);
+	/*aumentar imagen*/
+	transform: scale(0.9, 0.9);
+	/*disminuir imagen*/
+}
+
+
+/* footer */
+/* ***********++ */
+footer {
+	background-color: #044d36;
+	display: flex;
+	width: 100%;
+}
+
+/* footer img {
+    width: 10%;
+    height: 70px;
+    margin-left: 50px;
+    padding: 6px;
+    display: flex;
+} */
+footer #logoperu {
+	width: 30%;
+	height: 50px;
+	margin-left: 50px;
+	padding: 2px;
+	margin-top: 8px;
+	/* display: flex; */
+}
+
+footer #p {
+	width: 100%;
+	color: wheat;
+	text-align: center;
+	margin-left: -20%;
+	margin-top: 25px;
+}
+
+footer #ministerio {
+	width: 250px;
+	height: 60px;
+	margin-left: -14%;
+	margin-top: 2px;
+}

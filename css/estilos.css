@@ -1,0 +1,320 @@
+@charset "utf-8";
+
+/* css*/
+* {
+	margin: 0%;
+	border: 0%;
+	padding: 0%;
+}
+
+body {
+
+	/* margin: 60px; */
+	/* background-color: rgb(240, 240, 240); */
+	background-image: url(../imagenes1/naturaleza.jpg);
+}
+
+
+/* header */
+/* **************** */
+/* *******************+ */
+header img {
+	width: 10%;
+	margin: 3% 0% 0% 5%;
+	border-radius: 40px;
+	border: 2px solid white;
+}
+
+/* nav */
+/* ********************+ */
+nav {
+	width: 80%;
+	margin: -4% 0px 0px 20%;
+}
+
+nav ul {
+	list-style-type: none;
+	/*desaparecn los puntos*/
+	display: flex;
+	/*fila*/
+}
+
+nav>li {
+	float: left;
+}
+
+.nav li a {
+	background-color: transparent;
+	color: white;
+	text-decoration: none;
+	/*desaparecen la rayas*/
+	padding: 10px;
+	/*ordm*/
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 16pt;
+	letter-spacing: 2px;
+
+}
+
+.nav li ul {
+	display: none;
+	/*orden*/
+	position: absolute;
+	min-width: 140px
+}
+
+.nav li ul li {
+	position: relative;
+
+}
+
+.nav li ul li a {
+	background-color: rgb(102, 83, 46);
+	font-family: 'Courier New', Courier, monospace;
+	/* font-size: 20px; */
+}
+
+.nav li:hover>ul {
+	display: block;
+	/*los selectores*/
+}
+
+.nav li a:hover {
+	color: black;
+	background-color: gray;
+}
+
+/* logo whatsap */
+/* **************** */
+.whatsapp img {
+	background-color: wheat;
+	border-radius: 100px;
+	float: right;
+	width: 8%;
+	margin: -60px 80px 0px 0px;
+}
+
+/* *********** */
+/*ATRIBUTOS IMÁGENES HEADER*/
+.sliderheader {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	/*junta las fotos uno encima del otro*/
+	/* margin-left: 30px; */
+	background-image: url(../imagenes1/cinco/7.jpg);
+	/* border-radius: 10px; */
+}
+
+.sliderheader ul {
+	display: flex;
+	animation: cambio 5s infinite alternate;
+}
+
+.sliderheader li {
+	width: 100%;
+	list-style: none;
+	padding: 0px;
+}
+
+.sliderheader img {
+	width: 700px;
+	height: 400px;
+	padding: 20px 2px 20px 10px;
+}
+
+@keyframes cambio {
+	0% {
+		margin-left: 0;
+	}
+
+	10% {
+		margin-left: 0;
+	}
+
+	15% {
+		margin-left: -90%;
+	}
+
+	50% {
+		margin-left: -110%;
+	}
+
+	55% {
+		margin-left: -130%;
+	}
+
+	65% {
+		margin-left: -180%;
+	}
+
+	70% {
+		margin-left: -210%;
+	}
+
+	100% {
+		margin-left: -212%;
+	}
+}
+
+
+
+
+/* *************** */
+/* main img */
+.primero img {
+	width: 100%;
+}
+
+.patrimonio {
+	background-color: white;
+	text-align: center;
+
+}
+
+.patrimonio p {
+	color: rgb(102, 83, 46);
+	font-size: 20pt;
+	font-weight: bold;
+	font-family: 'Courier New', Courier, monospace;
+	margin: 20px 0px;
+}
+
+
+.patrimonio img {
+	width: 15%;
+	padding: 10px;
+
+}
+
+.patrimonio a img:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+/* section  */
+/* ********************** */
+/* ******************* */
+
+/* 
+section p {
+	text-align: center;
+	margin: 40px 0px 50px 0px;
+	color: rgb(102, 83, 46);
+	font: 4em courier;
+	font-weight: bolder;
+
+
+	border-left: 40px solid red;
+	border-right: 38px solid white;
+	border-radius: 100% 50% 50% 100% / 100%;
+	height: 200px;
+	width: 1269px;
+
+} */
+.wordart {
+	font-family: Arial, sans-serif;
+	font-size: 5em;
+	font-weight: bold;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .wordart.radial .text {
+	  background: #ff0505;
+	  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…BoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	  background: -moz-radial-gradient(center, ellipse cover, white 0%, red 100%);
+	  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fffffe), color-stop(100%, #ec8a39));
+	  background: -webkit-radial-gradient(center, ellipse cover,white 0%, red 100%);
+	  background: -o-radial-gradient(center, ellipse cover, white 0%, red 100%);
+	  background: -ms-radial-gradient(center, ellipse cover, white 0%, red 100%);
+	  background: radial-gradient(ellipse at center, white 0%, red 100%);
+	  background-clip: text;
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='red', GradientType=1);
+	  font-family: Impact, sans-serif;
+	  font-weight: bold;
+  }
+
+
+
+/*  */
+.figure {
+	width: 70%;
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-left: 200px;
+
+
+}
+
+.figure figure {
+	width: 50%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 20px;
+
+}
+
+.figure figure img {
+	width: 80%;
+	height: 400px;
+	margin: 10px auto;
+	display: block;
+	border-radius: 50px;
+}
+
+.figure figure img:hover {
+	-webkit-transform: scale(0.3);
+	transform: scale(0.9);
+}
+
+.figure figure img {
+	overflow: hidden;
+}
+
+
+
+.figure figure figcaption {
+	font-size: 30pt;
+	color: white;
+	font-weight: bolder;
+	font-family: 'Courier New', Courier, monospace;
+	text-align: center;
+}
+
+.figure figure a {
+	text-decoration: none;
+
+}
+
+/* color de link al momento de hacer click */
+.figure figure figcaption:hover {
+	color: red;
+}
+
+/* footer */
+/* ***************+ */
+footer {
+	background-color: black;
+}
+
+
+footer p {
+	text-align: center;
+	font-size: 13pt;
+	color: white;
+	font-family: 'Courier New', Courier, monospace;
+	margin-bottom: -15px;
+
+}
